@@ -1,4 +1,4 @@
-
+// total colum sum function
 function totalSum() {
   let sumColumn_1 = 0;
   let sumColumn_2 = 0;
@@ -10,8 +10,7 @@ function totalSum() {
     sumColumn_2 += parseInt(table.rows[i].cells[1].innerText);
     sumColumn_3 += parseInt(table.rows[i].cells[2].innerText);
   }
-  console.log(sumColumn_1, sumColumn_2, sumColumn_3);
-
+  // update sum text column
   document.getElementById('sum1').innerText = sumColumn_1;
   document.getElementById('sum2').innerText = sumColumn_2;
   document.getElementById('sum3').innerText = sumColumn_3;
@@ -30,12 +29,16 @@ function edit(event) {
   let tr = event.target.parentNode.parentNode;
   if (ebtn.innerText == 'Edit') {
     ebtn.innerText = 'Save'
+    tr.classList.add('edit_row');
+    event.target.classList.add('edit_back');
     tr.cells[0].setAttribute('contenteditable', 'true');
     tr.cells[1].setAttribute('contenteditable', 'true');
     tr.cells[2].setAttribute('contenteditable', 'true');
   } else {
     ebtn.innerText = 'Edit'
     totalSum();
+    tr.classList.remove('edit_row');
+    event.target.classList.remove('edit_back');
     tr.cells[0].setAttribute('contenteditable', 'false');
     tr.cells[1].setAttribute('contenteditable', 'false');
     tr.cells[2].setAttribute('contenteditable', 'false');

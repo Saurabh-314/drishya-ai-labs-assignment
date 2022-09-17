@@ -20,9 +20,10 @@ input{
 button{
   cursor: pointer;
   border-radius: 5px;
-  border-style:outset
-  /* outline: none; */
-
+  border-style:outset;
+}
+button:hover{
+  background-color: #4d6666;
 }
 #sum tr td{
   background-color: #6b6b8d;
@@ -32,3 +33,15 @@ button{
 #sum tr button{
   background-color: #6b6b8d;
 }
+#sum tr button:hover{
+  background-color: #4d6666;
+}
+.edit_row{
+  background-color: #969ea5;
+}
+.edit_back {
+  border: 1px solid #031b26fc;
+  background-color: #a5232375;
+  color: white;
+}
+
