@@ -1,0 +1,34 @@
+#table{
+  width: 100%;
+  text-align: center;
+}
+
+table{
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+table tr th,td{
+  padding: 3px;
+  width: 10%;
+}
+input{
+  width: 50px;
+  text-align: center;
+  border: none;
+}
+button{
+  cursor: pointer;
+  border-radius: 5px;
+  border-style:outset
+  /* outline: none; */
+
+}
+#sum tr td{
+  background-color: #6b6b8d;
+  font-size: 20px;
+  font-weight: 700;
+}
+#sum tr button{
+  background-color: #6b6b8d;
+}
