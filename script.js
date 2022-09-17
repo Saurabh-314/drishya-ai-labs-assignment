@@ -18,9 +18,9 @@ function totalSum() {
 
 // delete function
 function dlt(event) {
-  console.log(event);
   let tr = event.target.parentNode.parentNode;
   tr.remove();
+  totalSum();
 }
 
 // Edit function
